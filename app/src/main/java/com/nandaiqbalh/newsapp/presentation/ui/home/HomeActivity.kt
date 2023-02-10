@@ -43,7 +43,7 @@ class HomeActivity : AppCompatActivity() {
 		bottomNav.setupWithNavController(navController)
 		navController.addOnDestinationChangedListener { _, destination, _ ->
 			when (destination.id) {
-				R.id.articleFragment-> {
+				R.id.articleFragment, R.id.profileFragment-> {
 					hideBottomNav(true)
 				}
 				else -> hideBottomNav(false)

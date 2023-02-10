@@ -24,4 +24,7 @@
     <string name="tv_empty_saved_list">Your saved news is empty!</string>
     <string name="tv_error_connection">An error occured: No internet connection!</string>
     <string name="btn_get_started">Get Started</string>
+    <string name="btn_profile">Profile</string>
+    <string name="tv_my_name">Nanda Iqbal Hanafi</string>
+    <string name="tv_github">GitHub: nandaiqbalh</string>
 </resources>

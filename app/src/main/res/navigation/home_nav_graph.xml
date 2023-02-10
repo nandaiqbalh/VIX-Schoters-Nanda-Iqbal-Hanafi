@@ -44,6 +44,9 @@
             app:exitAnim="@anim/to_left"
             app:popExitAnim="@anim/to_right"
             app:popEnterAnim="@anim/from_left"/>
+        <action
+            android:id="@+id/action_savedFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
     </fragment>
     <fragment
         android:id="@+id/articleFragment"
@@ -53,5 +56,14 @@
         <argument
             android:name="article"
             app:argType="com.nandaiqbalh.newsapp.data.network.models.news.Article" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.nandaiqbalh.newsapp.presentation.ui.home.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_savedFragment"
+            app:destination="@id/savedFragment" />
     </fragment>
 </navigation>

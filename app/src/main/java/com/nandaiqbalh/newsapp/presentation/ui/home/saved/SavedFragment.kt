@@ -40,9 +40,17 @@ class SavedFragment : Fragment() {
 
 		toDetailArticle()
 
+		toProfilePage()
+
 		dragArticle()
 
 		return binding.root
+	}
+
+	private fun toProfilePage(){
+		binding.btnProfile.setOnClickListener {
+			findNavController().navigate(R.id.action_savedFragment_to_profileFragment)
+		}
 	}
 
 	private fun toDetailArticle(){
